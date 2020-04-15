@@ -1,0 +1,51 @@
+<div>{{message}}</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+
+				<div class="row">
+
+					<div class="col-md-4">
+						<div>
+							Login
+						</div>
+						<div>
+							Get access to your Orders, Wishlist and Recommendations
+						</div>
+						<div class="imageSpan">
+							<img src="../assets/imgLogin.png">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<form id="modalForm" ngNativeValidate>
+							<div class="form-group" id="form">
+								<div>
+
+									<mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+										<input matInput type="email" placeholder="Email" required name="email" [(ngModel)]="user.email">
+									</mat-form-field>
+
+
+								</div>
+								<div class="form-group">
+									<mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+										<input matInput type="password" placeholder="Password" required name="password" [(ngModel)]="user.password">
+									</mat-form-field>
+								</div>
+
+								<button type="submit" class="btn btn-default" data-dismiss="modal" (click)="login()">Login</button>
+								<br>
+								<a href="" data-toggle="modal" data-target="#myModalSignUp" data-dismiss="modal">
+									New User?Sign Up
+								</a>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

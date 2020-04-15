@@ -1,0 +1,83 @@
+.signUp {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signUp > * {
+    width: 100%;
+  }
+  
+  .signUp form {
+    margin-bottom: 20px;
+  }
+  
+  .signUp form > * {
+    margin: 5px 0;
+  }
+  
+  .signUp .mat-radio-button {
+    margin: 0 5px;
+  }
+
+  .modal-body
+  {
+      
+      padding:0px 0px;
+      border-radius: 2px;
+  }
+  
+  #myModalSignUp{
+      margin-top: 150px;
+      transition: opacity 0.3s, visibility 0.3s;
+  }
+  .row
+  {
+      padding: 0px 0px;
+      height:373.5px;
+  }
+  .col-md-4{
+      background-color: #2874f0;
+      height:400px;
+  }
+  .col-md-4 div{
+      font-family: Roboto, Arial, sans-serif;
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: 50px;
+  }
+  .col-md-4 .imageSpan{
+      height: 200px;
+      margin-top: 10px;
+      width: 238px;
+  }
+  .imageSpan img{
+      height:150px;
+      width:180px;
+  }
+  .col-md-8 
+  {
+      background-color:white; 
+      color:black;
+      height: 400px;
+     }
+#modalForm
+     {
+      margin-top:70px;
+      margin-left:40px;
+     }
+  
+     button{
+          width:300px; 
+          height:48px;
+          font-size:15px;
+          border-radius: 2px;
+          color:black;
+          background:#fb641b;   
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+      }
+  
+  .form-group div{
+      display: flex;
+      flex-direction: column;
+  }

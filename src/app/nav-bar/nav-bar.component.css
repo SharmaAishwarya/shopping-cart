@@ -1,0 +1,38 @@
+.navbar {
+    border-radius:0px;
+    position: relative;
+    min-height: 50px;
+	border:transparent;
+	padding-right:20px;
+	padding-left:40px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color: #2874f0;
+}
+
+.navbar img
+{
+ margin-left: 80px;
+ width: 110px;
+}
+
+.input-group
+{
+    width : 750px ; 
+}
+
+.navbar .nav li a
+{
+    color: white;
+}
+
+.dropdown-menu a
+{
+    color: black;
+}
+
+.navbar div
+{
+    margin-left: 80px;
+}
+

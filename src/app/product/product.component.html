@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+
+  <div class="row">
+    <div class="col-sm-3 hovereffect" *ngFor="let product of products">
+      <br>
+      <br>
+      <div class="nameTag">
+        {{product.name}}
+      </div>
+      <div class="a imageAlign">
+        <img src="./assets/{{product.photo}}" alt="{{product.name}}" width="150" height="200">
+      </div>
+      <div class="priceTag">
+        <p>{{product.price}} Rs.</p>
+      </div>
+      <div>
+        <a href="#" class="btn btn-success btn-md">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

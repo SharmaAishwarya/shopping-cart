@@ -1,0 +1,62 @@
+<div id="myModalSignUp" class="modal fade" role="dialog">
+        <a href="#" class="close" background="blue" data-dismiss="modal">&times;</a>
+    <div class="modal-dialog">
+           
+        <div class="modal-content">
+                
+            <div class="modal-body">
+                    
+                <div class="row">
+                       
+                    <div class="col-md-4">
+                        <div>
+                            Sign Up
+                        </div>
+                        <div>
+                            We don't share your details with anyone else.
+                        </div>
+                        <div class="imageSpan">
+                            <img src="../assets/imgLogin.png">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <form id="modalFormSignUp" ngNativeValidate>
+                            <div class="form-group" id="form"  >
+
+
+
+                                <div class="signUp">
+
+                                    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+                                        <input matInput placeholder="Name" class="ng-invalid" required name="name" [(ngModel)]="user.name">
+                                    </mat-form-field>
+
+                                    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+                                            <input matInput placeholder="Email" class="ng-invalid"  required name="email" [(ngModel)]="user.email">
+                                    </mat-form-field>
+
+                                    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+                                        <input matInput type="password" placeholder="Password" class="ng-invalid"  name="password" required [(ngModel)]="user.password">
+                                    </mat-form-field>
+
+                                    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+                                        <input matInput type="date" placeholder="Date Of Birth"  name="dateofbirth" [(ngModel)]="user.dateofbirth">
+                                    </mat-form-field>
+
+                                    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+                                        <textarea matInput placeholder="Address" required name="address" [(ngModel)]="user.address"></textarea>
+                                    </mat-form-field>
+
+                                    <button type="submit"  class="submit" data-dismiss="modal"  (click)="registerUser(user)">sign up</button>
+                                    
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
